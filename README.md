@@ -12,3 +12,14 @@
 [Блок-схема](Homework_001/diagram.drawio.png)
 
 [Код](Homework_001/Program.cs)
+
+- Homework_002
+#### Напишите метод(-ы), который принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+3 -> 1, 8, 27
+
+5 -> 1, 8, 27, 64, 125
+
+[Блок-схема](Homework_002/diagram.drawio.png)
+
+[Код](Homework_002/Program.cs)
