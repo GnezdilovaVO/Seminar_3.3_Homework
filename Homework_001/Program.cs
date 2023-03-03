@@ -14,15 +14,30 @@ int GetBackNumber (int straightNumber)
 
     return backNumber;
 }
+bool Sravni(int number1, int number2)
+{
+    if (number1 == number2)
+    {
+       return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+string Outcome(bool resultSravni)
+{
+    if (resultSravni == true) {return "да";}
+    else {
+        return "нет";
+        }
+}
 int number = GetNumber("Введите число: ");
 int reserve = number;
 int newNumber = GetBackNumber(number);
-if (reserve == newNumber)
-{
-    Console.WriteLine("да");
-}
-else
-{
-    Console.WriteLine("нет");
-}
+bool result = Sravni(reserve, newNumber);
+string text = Outcome(result);
+Console.WriteLine(text);
+
+
 
