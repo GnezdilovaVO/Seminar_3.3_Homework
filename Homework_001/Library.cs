@@ -29,7 +29,10 @@ public static class Library
     }
     public static string Outcome(bool resultSravni)
     {
-        if (resultSravni == true) { return "да"; }
+        if (resultSravni == true) 
+        {   
+            return "да";
+        }
         else
         {
             return "нет";

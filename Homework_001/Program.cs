@@ -3,8 +3,7 @@ int number = GetNumber("Введите число: ");
 int reserve = number;
 int newNumber = GetBackNumber(number);
 bool result = Sravni(reserve, newNumber);
-string text = Outcome(result);
-Console.WriteLine(text);
+Console.WriteLine(Outcome(result));
 
 
 
