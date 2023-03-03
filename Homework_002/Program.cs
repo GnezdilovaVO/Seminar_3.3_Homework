@@ -1,10 +1,19 @@
-﻿Console.WriteLine("Введите число N: ");
-int N = Convert.ToInt32(Console.ReadLine());
-int i = 1;
-string result = String.Empty;
-while (i <= N)
+﻿int GetNumber(string text)
 {
-    result = result + i*i*i + ", ";
-    i++;
+    Console.WriteLine(text);
+    return Convert.ToInt32(Console.ReadLine());
 }
-Console.WriteLine(result);
+string GetResult(int numb)
+{
+    int i = 1;
+    string result = String.Empty;
+    while (i <= numb)
+    {
+        result = result + i * i * i + ", ";
+        i++;
+    }
+    return result;
+}
+int N = GetNumber("Введите число N: ");
+Console.WriteLine(GetResult(N));
+
